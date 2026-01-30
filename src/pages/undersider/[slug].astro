@@ -56,10 +56,18 @@ const { item } = Astro.props;
 </html>
 
 <style>
+
+  html{
+    min-height: 100vh;
+  }
+  body {
+    min-height: 100vh;
+  }
   section {
     display: flex;
     background-color: var(--secondarycolor);
     margin: 2rem;
+    min-height: 90vh;
   }
   section > * {
     flex-basis: 100%;
@@ -67,7 +75,7 @@ const { item } = Astro.props;
   .indhold {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 2rem;
     padding-inline: 1rem;
   }
 
